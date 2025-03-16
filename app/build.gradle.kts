@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
+
 android {
     namespace = "ua.opnu.androidlab1"
     compileSdk = 34
@@ -10,7 +11,7 @@ android {
     defaultConfig {
         applicationId = "ua.opnu.androidlab1"
         minSdk = 28
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -50,4 +51,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.activity.compose)
 }
